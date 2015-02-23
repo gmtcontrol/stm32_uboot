@@ -41,6 +41,22 @@ struct stm32_fmc_regs {
 	u32 sdsr;
 };
 
+/**
+  * FMC SDRAM Bank address
+  */   
+#define FMC_SDRAM_BANK_ADDR    	((uint32_t)0xD0000000)
+
+/**
+  * FMC SDRAM Size
+  */   
+#define FMC_SDRAM_BANK_SIZE		((uint32_t)0x00800000)
+
+/**
+ * Initialize the specified SDRAM controller
+ * @returns             0 on success, < 0 on failure
+ */
+int fmc_dram_init(void);
+
 /*
  * FMC registers base
  */

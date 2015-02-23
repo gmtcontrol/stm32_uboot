@@ -907,7 +907,7 @@ static s32 stm_mac_hw_init(struct stm_eth_dev *mac)
 		/* CSR Clock range between 60-100 MHz */
 		tmp = STM32_MAC_MIIAR_CR_DIV42 << STM32_MAC_MIIAR_CR_BIT;
 	} else {
-		/* CSR Clock range between 100-180 MHz */
+		/* CSR Clock range between 100-168 MHz */
 		tmp = STM32_MAC_MIIAR_CR_DIV62 << STM32_MAC_MIIAR_CR_BIT;
 	}
 

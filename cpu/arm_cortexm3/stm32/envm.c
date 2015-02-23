@@ -39,7 +39,7 @@
  */
 static u32 flash_bsize[] = {
 	[0 ... 3]	=  16 * 1024,
-	[4]		=  64 * 1024,
+	[4]			=  64 * 1024,
 	[5 ... 11]	= 128 * 1024
 #if defined(CONFIG_SYS_STM32F43X)
 	,
